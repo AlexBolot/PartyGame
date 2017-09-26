@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--..............................................................................................................................
+  . Copyright (c)
+  .
+  . The circle_shapeas Coded by : Alexandre BOLOT
+  .
+  . Last Modified : 26/08/17 22:41
+  .
+  . Contact : bolotalex06@gmail.com
+  .............................................................................................................................-->
+
+<shape
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:innerRadiusRatio="2.3"
+		android:shape="ring"
+		android:thickness="3.8sp">
+	<solid android:color="@color/white"/>
+</shape>

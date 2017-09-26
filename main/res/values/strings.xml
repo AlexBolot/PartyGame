@@ -1,0 +1,46 @@
+<!--..............................................................................................................................
+  . Copyright (c)
+  .
+  . The strings.xml	 Class was Coded by : Alexandre BOLOT
+  .
+  . Last Modified : 24/08/17 00:35
+  .
+  . Contact : bolotalex06@gmail.com
+  .............................................................................................................................-->
+
+<resources>
+
+    <!-- GUI text -->
+    <string name="app_name">Drinking Game</string>
+    <string name="gui_verite">Vérité</string>
+    <string name="gui_action">Action</string>
+    <string name="gui_suivant">Suivant</string>
+    <string name="gui_jouer">Jouer !</string>
+    <string name="gui_joueurs">Joueurs</string>
+    <string name="gui_nom">Nom</string>
+    <string name="gui_homme">Homme</string>
+    <string name="gui_femme">Femme</string>
+    <string name="gui_jouons">Jouons !</string>
+    <string name="gui_termine">Terminé !</string>
+    <!--*******************************************-->
+
+    <!-- Constant Keys for HashMaps -->
+    <string name="players_list">PlayersList</string>
+    <string name="player_name">PlayerName</string>
+    <string name="choice">Choice</string>
+    <string name="dare">Dare</string>
+    <string name="truth">Truth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <!--*******************************************-->
+
+    <!-- Constant Names for gender tags -->
+    <string name="FEMALE_PLAYER">FEMALE_PLAYER</string>
+    <string name="MALE_PLAYER">MALE_PLAYER</string>
+    <string name="OTHER_PLAYER">OTHER_PLAYER</string>
+    <string name="TIMER">TIMER</string>
+    <string name="gui_secondes">secondes</string>
+    <string name="gui_demarrer">Démarrer</string>
+    <!--*******************************************-->
+
+</resources>
