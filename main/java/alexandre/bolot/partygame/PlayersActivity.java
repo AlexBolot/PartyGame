@@ -1,15 +1,5 @@
 package alexandre.bolot.partygame;
 
-/*................................................................................................................................
- . Copyright (c)
- .
- . The PlayersActivity	 Class was Coded by : Alexandre BOLOT
- .
- . Last Modified : 23/08/17 02:43
- .
- . Contact : bolotalex06@gmail.com
- ...............................................................................................................................*/
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,8 +10,32 @@ import android.widget.RadioGroup;
 
 import java.util.ArrayList;
 
+/*................................................................................................................................
+ . Copyright (c)
+ .
+ . The PlayersActivity	 Class was Coded by : Alexandre BOLOT
+ .
+ . Last Modified : 27/09/17 11:34
+ .
+ . Contact : bolotalex06@gmail.com
+ ...............................................................................................................................*/
+
+/**
+ This class is the Activity managing the players_view.xml.<br>
+ This Activity allows you to add Players to the game.<br>
+ <br>
+ __ Class Dependency : AppMaster, TruthDareActivity __
+ */
 public class PlayersActivity extends AppMaster
 {
+    /**
+     This is the initialization method, called on the Activity's launch.<br>
+     It initializes : the GUI listeners.<br>
+     <br>
+     __ Class Dependency : TruthDareActivity __
+     
+     @param savedInstanceState No idea what that does...
+     */
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
@@ -52,6 +66,14 @@ public class PlayersActivity extends AppMaster
         });
     }
     
+    /**
+     Whenever the '+' button is clicked, this method is called.<br>
+     It adds a new Player to the AppMaster.players.<br>
+     <br>
+     It does a couple checks before adding the player :<br>
+     — Checks if gender is selected.<br>
+     — Checks if name !isEmpty() and contains only letters.<br>
+     */
     public void addPlayer ()
     {
         RadioGroup radioGroup = ((RadioGroup) findViewById(R.id.radioGroup));
@@ -76,6 +98,9 @@ public class PlayersActivity extends AppMaster
         refreshListViewPlayer();
     }
     
+    /**
+     Simple refresh method : re-reads the value and rebinds the Adapter.
+     */
     public void refreshListViewPlayer ()
     {
         ArrayList<String> strings = new ArrayList<>();
