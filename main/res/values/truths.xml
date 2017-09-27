@@ -4,7 +4,7 @@
   .
   . The truths.xml	 Class was Coded by : Alexandre BOLOT
   .
-  . Last Modified : 27/09/17 08:37
+  . Last Modified : 27/09/17 08:58
   .
   . Contact : bolotalex06@gmail.com
   .............................................................................................................................-->
@@ -13,7 +13,8 @@
 
     <string-array name="truths">
 
-        <item>There are no truths implemented.</item>
+        <!-- THERE ARE NO TRUTHS HERE -->
+        <!-- IMPLEMENT THEM YOURSELF  -->
 
     </string-array>
 

@@ -4,7 +4,7 @@
   .
   . The dares.xml	 Class was Coded by : Alexandre BOLOT
   .
-  . Last Modified : 27/09/17 08:45
+  . Last Modified : 27/09/17 08:58
   .
   . Contact : bolotalex06@gmail.com
   .............................................................................................................................-->
@@ -13,7 +13,8 @@
 
     <string-array name="dares">
 
-        <item>There are no dares implemented.</item>
+        <!-- THERE ARE NO DARES HERE -->
+        <!-- IMPLEMENT THEM YOURSELF -->
 
     </string-array>
 
