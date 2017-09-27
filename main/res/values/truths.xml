@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--..............................................................................................................................
+  . Copyright (c)
+  .
+  . The truths.xml	 Class was Coded by : Alexandre BOLOT
+  .
+  . Last Modified : 27/09/17 08:37
+  .
+  . Contact : bolotalex06@gmail.com
+  .............................................................................................................................-->
+
+<resources>
+
+    <string-array name="truths">
+
+        <item>There are no truths implemented.</item>
+
+    </string-array>
+
+</resources>
