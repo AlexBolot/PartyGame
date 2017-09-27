@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--..............................................................................................................................
+  . Copyright (c)
+  .
+  . The dares.xml	 Class was Coded by : Alexandre BOLOT
+  .
+  . Last Modified : 27/09/17 08:45
+  .
+  . Contact : bolotalex06@gmail.com
+  .............................................................................................................................-->
+
+<resources>
+
+    <string-array name="dares">
+
+        <item>There are no dares implemented.</item>
+
+    </string-array>
+
+</resources>
