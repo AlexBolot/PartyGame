@@ -10,7 +10,7 @@ import android.widget.Button;
  .
  . The LaunchActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 10:38
+ . Last Modified : 27/09/17 11:23
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -25,8 +25,10 @@ public class LaunchActivity extends AppMaster
 {
     /**
      This is the initialization method, called on the Activity's launch.<br>
-     It will clear the players list and inits the button's listener.
-     
+     It will clear the players list and inits the button's listener.<br>
+     <br>
+     __ Class Dependency : PlayersActivity __
+ 
      @param savedInstanceState No idea what that does...
      */
     @Override
