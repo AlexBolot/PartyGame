@@ -15,7 +15,7 @@ import java.util.ArrayList;
  .
  . The PlayersActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 11:34
+ . Last Modified : 27/09/17 11:36
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -24,7 +24,7 @@ import java.util.ArrayList;
  This class is the Activity managing the players_view.xml.<br>
  This Activity allows you to add Players to the game.<br>
  <br>
- __ Class Dependency : AppMaster, TruthDareActivity __
+ __ Class Dependency : AppMaster, TruthDareActivity, Player __
  */
 public class PlayersActivity extends AppMaster
 {
@@ -73,6 +73,8 @@ public class PlayersActivity extends AppMaster
      It does a couple checks before adding the player :<br>
      — Checks if gender is selected.<br>
      — Checks if name !isEmpty() and contains only letters.<br>
+     <br>
+     __ Class Dependency : Player __
      */
     public void addPlayer ()
     {
@@ -99,7 +101,9 @@ public class PlayersActivity extends AppMaster
     }
     
     /**
-     Simple refresh method : re-reads the value and rebinds the Adapter.
+     Simple refresh method : re-reads the value and rebinds the Adapter.<br>
+     <br>
+     __ Class Dependency : Player __
      */
     public void refreshListViewPlayer ()
     {

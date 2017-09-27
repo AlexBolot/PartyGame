@@ -18,7 +18,7 @@ import java.util.Random;
  .
  . The ChallengeActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 10:41
+ . Last Modified : 27/09/17 11:41
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -33,7 +33,7 @@ import java.util.Random;
  <li>It offers to start a timer, if the challenge requires it.</li>
  </ol>
  <br>
- __ Class Dependency : AppMaster, TruthDareActivity __
+ __ Class Dependency : AppMaster, TruthDareActivity, Player __
  */
 public class ChallengeActivity extends AppMaster
 {
@@ -57,8 +57,8 @@ public class ChallengeActivity extends AppMaster
  
      It reads from the value files.<br>
      <br>
-     __ Class Dependency : TruthDareActivity __
- 
+     __ Class Dependency : TruthDareActivity, Player __
+     
      @param savedInstanceState No idea what that does...
      */
     @Override
@@ -138,9 +138,11 @@ public class ChallengeActivity extends AppMaster
     
     /**
      This method can replace the OTHER_PLAYER, FEMALE_PLAYER, etc tags from a challenge's content.<br>
-     If the tag is OTHER_PLAYER, it will avoid using the [currentPlayer] from the parameters.<br>
-     If the TIME tag is found, it will show the ProgressBar and set it with the appropriate time.
- 
+     - If the tag is OTHER_PLAYER, it will avoid using the [currentPlayer] from the parameters.<br>
+     - If the TIME tag is found, it will show the ProgressBar and set it with the appropriate time.<br>
+     <br>
+     __ Class Dependency : TruthDareActivity, Player __
+     
      @param challenge     Challenge containing the tags.
      @param currentPlayer Player to avoid when OTHER_PLAYER tag is found.
      @return the new Challenge, without the tags.
