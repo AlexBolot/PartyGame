@@ -3,7 +3,7 @@
   .
   . The strings.xml	 Class was Coded by : Alexandre BOLOT
   .
-  . Last Modified : 24/08/17 00:35
+  . Last Modified : 27/09/17 08:56
   .
   . Contact : bolotalex06@gmail.com
   .............................................................................................................................-->
@@ -11,7 +11,7 @@
 <resources>
 
     <!-- GUI text -->
-    <string name="app_name">Drinking Game</string>
+    <string name="app_name">Party Game</string>
     <string name="gui_verite">Vérité</string>
     <string name="gui_action">Action</string>
     <string name="gui_suivant">Suivant</string>
@@ -22,6 +22,8 @@
     <string name="gui_femme">Femme</string>
     <string name="gui_jouons">Jouons !</string>
     <string name="gui_termine">Terminé !</string>
+    <string name="gui_secondes">secondes</string>
+    <string name="gui_demarrer">Démarrer</string>
     <!--*******************************************-->
 
     <!-- Constant Keys for HashMaps -->
@@ -39,8 +41,6 @@
     <string name="MALE_PLAYER">MALE_PLAYER</string>
     <string name="OTHER_PLAYER">OTHER_PLAYER</string>
     <string name="TIMER">TIMER</string>
-    <string name="gui_secondes">secondes</string>
-    <string name="gui_demarrer">Démarrer</string>
     <!--*******************************************-->
 
 </resources>
