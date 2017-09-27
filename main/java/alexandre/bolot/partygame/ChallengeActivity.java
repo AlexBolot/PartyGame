@@ -18,7 +18,7 @@ import java.util.Random;
  .
  . The ChallengeActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 10:33
+ . Last Modified : 27/09/17 10:41
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -33,7 +33,7 @@ import java.util.Random;
  <li>It offers to start a timer, if the challenge requires it.</li>
  </ol>
  <br>
- __ Class Dependency : AppMaster __
+ __ Class Dependency : AppMaster, TruthDareActivity __
  */
 public class ChallengeActivity extends AppMaster
 {
@@ -54,9 +54,11 @@ public class ChallengeActivity extends AppMaster
      <li>the GUI listeners</li>
      <li>the values of the TextFields (challenge and playerName)</li>
      </ol>
-     
-     It reads from the value files.
-     
+ 
+     It reads from the value files.<br>
+     <br>
+     __ Class Dependency : TruthDareActivity __
+ 
      @param savedInstanceState No idea what that does...
      */
     @Override
