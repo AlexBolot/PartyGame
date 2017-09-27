@@ -1,15 +1,5 @@
 package alexandre.bolot.partygame;
 
-/*................................................................................................................................
- . Copyright (c)
- .
- . The ChallengeActivity	 Class was Coded by : Alexandre BOLOT
- .
- . Last Modified : 23/08/17 05:36
- .
- . Contact : bolotalex06@gmail.com
- ...............................................................................................................................*/
-
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
@@ -23,6 +13,28 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+/*................................................................................................................................
+ . Copyright (c)
+ .
+ . The ChallengeActivity	 Class was Coded by : Alexandre BOLOT
+ .
+ . Last Modified : 27/09/17 10:33
+ .
+ . Contact : bolotalex06@gmail.com
+ ...............................................................................................................................*/
+
+/**
+ This class is the Activity managing the challenge_view.xml.<br>
+ This activity is the one displaying the challenge :
+ <ol>
+ <li>It shows the name of the current player.</li>
+ <li>It shows the content of the challenge.</li>
+ <li>It offers to go to the next challenge.</li>
+ <li>It offers to start a timer, if the challenge requires it.</li>
+ </ol>
+ <br>
+ __ Class Dependency : AppMaster __
+ */
 public class ChallengeActivity extends AppMaster
 {
     private ProgressBar progressBar;
@@ -31,9 +43,22 @@ public class ChallengeActivity extends AppMaster
     private Button      btnStartTimer;
     private Button      btnNext;
     
-    private Boolean hasTimer = false;
-    private int duration = 0;
+    private boolean hasTimer = false;
+    private int     duration = 0;
     
+    /**
+     This is the initialization method, called on the Activity's launch.<br>
+     It initializes :
+     <ol>
+     <li>the GUI components</li>
+     <li>the GUI listeners</li>
+     <li>the values of the TextFields (challenge and playerName)</li>
+     </ol>
+     
+     It reads from the value files.
+     
+     @param savedInstanceState No idea what that does...
+     */
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
@@ -109,6 +134,15 @@ public class ChallengeActivity extends AppMaster
         //endregion
     }
     
+    /**
+     This method can replace the OTHER_PLAYER, FEMALE_PLAYER, etc tags from a challenge's content.<br>
+     If the tag is OTHER_PLAYER, it will avoid using the [currentPlayer] from the parameters.<br>
+     If the TIME tag is found, it will show the ProgressBar and set it with the appropriate time.
+ 
+     @param challenge     Challenge containing the tags.
+     @param currentPlayer Player to avoid when OTHER_PLAYER tag is found.
+     @return the new Challenge, without the tags.
+     */
     private String replaceTags (String challenge, Player currentPlayer)
     {
         //region --> Replacing when OTHER PLAYER is found (gender neutral)
@@ -171,13 +205,12 @@ public class ChallengeActivity extends AppMaster
         return challenge;
     }
     
+    /**
+     Starts the progress of the ProgressBar and blocks the GUI until the progress.
+     */
     private void startCounter ()
     {
         if(duration == 0) return;
-        
-        progressBar.setVisibility(View.VISIBLE);
-        btnStartTimer.setVisibility(View.INVISIBLE);
-        btnNext.setVisibility(View.INVISIBLE);
         
         ObjectAnimator animation = ObjectAnimator.ofInt(progressBar, "progress", 0, 100); // see this max value coming back here, we animate towards that value
         animation.setDuration(duration); //in milliseconds
@@ -189,7 +222,9 @@ public class ChallengeActivity extends AppMaster
             @Override
             public void onAnimationStart (Animator animation)
             {
-                // Nothing to do here.
+                progressBar.setVisibility(View.VISIBLE);
+                btnStartTimer.setVisibility(View.INVISIBLE);
+                btnNext.setVisibility(View.INVISIBLE);
             }
             
             @Override
