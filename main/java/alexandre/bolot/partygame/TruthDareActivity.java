@@ -1,24 +1,37 @@
 package alexandre.bolot.partygame;
 
-/*................................................................................................................................
- . Copyright (c)
- .
- . The TruthDareActivity	 Class was Coded by : Alexandre BOLOT
- .
- . Last Modified : 23/08/17 13:58
- .
- . Contact : bolotalex06@gmail.com
- ...............................................................................................................................*/
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/*................................................................................................................................
+ . Copyright (c)
+ .
+ . The TruthDareActivity	 Class was Coded by : Alexandre BOLOT
+ .
+ . Last Modified : 27/09/17 11:45
+ .
+ . Contact : bolotalex06@gmail.com
+ ...............................................................................................................................*/
+
+/**
+ This class is the Activity managing the truth_dare_view.xml.<br>
+ This Activity displays the current player's name and asks to pick either Truth or Dare.<br>
+ <br>
+ __ Class Dependency : AppMaster, ChallengeActivity __
+ */
 public class TruthDareActivity extends AppMaster
 {
-    @SuppressWarnings("unchecked")
+    /**
+     This is the initialization method, called on the Activity's launch.<br>
+     It initializes : the GUI listeners and pick the next player in AppMaster.players.<br>
+     <br>
+     __ Class Dependency : ChallengeActivity __
+     
+     @param savedInstanceState No idea what that does...
+     */
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
