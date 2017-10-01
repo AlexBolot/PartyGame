@@ -11,7 +11,7 @@ import android.widget.TextView;
  .
  . The TruthDareActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 11:45
+ . Last Modified : 01/10/17 22:28
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -43,8 +43,9 @@ public class TruthDareActivity extends AppMaster
         TextView txtPlayerName = (TextView) findViewById(R.id.txtPlayerName);
         
         if(playerIndex >= players.size()) playerIndex = 0;
-        
-        String playerName = players.get(playerIndex).getName();
+    
+        String playerName = randOrder ? Player.getRandom().getName() : players.get(playerIndex).getName();
+    
         txtPlayerName.setText(playerName);
         
         final Intent intent = new Intent(TruthDareActivity.this, ChallengeActivity.class);

@@ -18,7 +18,7 @@ import java.util.Random;
  .
  . The ChallengeActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 11:41
+ . Last Modified : 01/10/17 22:27
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -68,7 +68,8 @@ public class ChallengeActivity extends AppMaster
         setContentView(R.layout.challenge_view);
         
         String choice = getIntent().getStringExtra(getString(R.string.choice));
-        
+        final String playerName = getIntent().getStringExtra(getString(R.string.player_name));
+    
         //region --> Init gui objects
         txtPlayerName = (TextView) findViewById(R.id.txtPlayerName);
         txtChallenge = (TextView) findViewById(R.id.txtChallenge);
@@ -106,8 +107,6 @@ public class ChallengeActivity extends AppMaster
         
         Random rand = new Random();
         int index;
-        
-        String playerName = getIntent().getStringExtra(getString(R.string.player_name));
         
         txtPlayerName.setText(playerName);
         

@@ -3,7 +3,7 @@
   .
   . The strings.xml	 Class was Coded by : Alexandre BOLOT
   .
-  . Last Modified : 27/09/17 08:56
+  . Last Modified : 01/10/17 21:54
   .
   . Contact : bolotalex06@gmail.com
   .............................................................................................................................-->
@@ -41,6 +41,8 @@
     <string name="MALE_PLAYER">MALE_PLAYER</string>
     <string name="OTHER_PLAYER">OTHER_PLAYER</string>
     <string name="TIMER">TIMER</string>
+    <string name="gui_ordre_cyclique">Ordre cyclique</string>
+    <string name="gui_ordre_aleatoire">Ordre aléatoire</string>
     <!--*******************************************-->
 
 </resources>

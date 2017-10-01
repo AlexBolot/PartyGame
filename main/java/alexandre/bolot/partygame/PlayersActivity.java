@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioGroup;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
@@ -15,7 +16,7 @@ import java.util.ArrayList;
  .
  . The PlayersActivity	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 27/09/17 11:36
+ . Last Modified : 01/10/17 22:28
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -42,6 +43,8 @@ public class PlayersActivity extends AppMaster
         super.onCreate(savedInstanceState);
         setContentView(R.layout.players_view);
     
+        final ToggleButton toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
+        
         refreshListViewPlayer();
     
         findViewById(R.id.imgBtnAdd).setOnClickListener(new View.OnClickListener()
@@ -59,7 +62,8 @@ public class PlayersActivity extends AppMaster
             public void onClick (View v)
             {
                 if(players.isEmpty()) return;
-    
+                randOrder = toggleButton.isChecked();
+                
                 Intent intent = new Intent(PlayersActivity.this, TruthDareActivity.class);
                 startActivity(intent);
             }

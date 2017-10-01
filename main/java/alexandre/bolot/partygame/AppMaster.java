@@ -10,7 +10,7 @@ import java.util.ArrayList;
  .
  . The AppMaster	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 26/09/17 14:39
+ . Last Modified : 01/10/17 22:06
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -31,4 +31,10 @@ public class AppMaster extends AppCompatActivity
      Used to cycle through all the players of [players]
      */
     public static int               playerIndex = 0;
+    
+    /**
+     True : the players will be selected randomly.<br>
+     False : the players will be selected as they were listed.
+     */
+    public static boolean randOrder = false;
 }
