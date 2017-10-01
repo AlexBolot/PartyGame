@@ -2,9 +2,9 @@
 <!--..............................................................................................................................
   . Copyright (c)
   .
-  . The challenge_view_view.xml	 Class was Coded by : Alexandre BOLOT
+  . The challenge_view.xml	 Class was Coded by : Alexandre BOLOT
   .
-  . Last Modified : 23/08/17 05:18
+  . Last Modified : 01/10/17 22:41
   .
   . Contact : bolotalex06@gmail.com
   .............................................................................................................................-->
@@ -44,25 +44,25 @@
             android:layout_marginEnd="8dp"/>
 
     <TextView
-            android:layout_width="0dp"
+            android:layout_width="284dp"
             android:layout_height="0dp"
             android:id="@+id/txtChallenge"
             android:textSize="30sp"
             android:textColor="@android:color/background_light"
             android:gravity="top|center"
-            android:layout_marginLeft="50dp"
-            app:layout_constraintLeft_toLeftOf="@+id/imageView2"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/btnNext"
-            android:layout_marginRight="50dp"
-            app:layout_constraintRight_toRightOf="@+id/imageView2"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/txtPlayerName"
-            app:layout_constraintHorizontal_bias="0.0"
             android:textAlignment="center"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"/>
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="50dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"/>
 
     <TextView
             android:layout_width="wrap_content"
